@@ -1,0 +1,168 @@
+/* pc low resolution, tablet and mobile*/
+@media (max-width: 1239px) {
+    .sidenav_list-item {
+        padding: 0px;
+    }
+}
+
+/* tablet and mobile */
+@media (max-width: 1023px) {
+    .app {
+        padding-top: 100px;
+    }
+
+    .header {
+        padding-top: 0px;
+    }
+
+    .header__intro {
+        display: block;
+        border: none;
+    }
+
+    .header__intro-wrapper {
+        text-align: center;
+    }
+
+    .intro-wrapper {
+        display: none;
+    }
+
+    .header__intro-socials {
+        margin-top: 34px;
+        margin-bottom: 34px;
+    }
+
+    .header__intro-img {
+        position: relative;
+        transform: translateY(-25%);
+        margin: 0 auto;
+    }
+
+    .sidenav {
+        margin-bottom: 8px;
+    }
+
+    .sidenav_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidenav_list-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .sidenav_list-item-link {
+        padding: 6px 22px;
+    }
+   
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .app {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .header {
+        padding: 16px;
+        padding-top: 0px;
+    }
+
+    .header__intro-wrapper {
+        margin-top: -20px;
+    }
+
+    .header__info-item-title {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .header__info-item {
+        margin-bottom: 24px;
+    }
+
+    .content_container {
+        padding-bottom: 120px;
+    }
+
+    .sidenav {
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        z-index: 2;
+        margin: 0;
+        border-radius: 0;
+        padding: 16px 0;
+        background-color: rgba(162, 184, 231, .7);
+    }
+
+    .sidenav_list {
+        justify-content: space-evenly;
+    }
+
+    .sidenav_list-item-link {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 13px 14px;
+    }
+
+    .sidenav_list-item-link .sidenav_list-item-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content-item {
+        padding: 16px;
+    }
+
+    .content-myself__text {
+        margin-bottom: 12px;
+    }
+
+    .product__item:nth-last-child(2) {
+        margin-bottom: 24px;
+    }
+    .slider__item{
+        height: 250px;
+    }
+    .slider__item-img {
+        min-width: 70px;
+        height: 70px;
+    }
+    .slider__item-img::before{
+        top: -40%;
+    }
+    .slider__item-content{
+        margin-left: 18px;
+    }
+    .skill__item-progress-percent{
+        display: none;
+    }
+    .rectangle {
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    @keyframes scaleSidenavTablet {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.07);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+}
+
+/* pc low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {}
